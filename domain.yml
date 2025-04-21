@@ -1,0 +1,126 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_visa_requirements
+  - ask_accommodation
+  - ask_universities
+  - ask_tuition_fees
+  - ask_travel_info
+  - ask_language_requirements
+  - ask_professors
+  - ask_student_life
+  - ask_part_time_rules
+  - ask_health_insurance
+  - ask_internships
+  - ask_scholarships
+  - ask_campus_facilities
+
+responses:
+  utter_happy:
+    - text: "I'm happy to help! 😊"
+  utter_cheer_up:
+    - text: "I'm sorry to hear that. Here's something to cheer you up! 😊"
+
+  utter_did_that_help:
+    - text: "Did that help a little?"
+  utter_greet:
+    - text: "Hi there! 👋 How can I assist you with your study abroad journey today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Wishing you the best on your academic journey. 🌍"
+
+  utter_affirm:
+    - text: "Great! Let me know if there's anything else I can help you with."
+
+  utter_deny:
+    - text: "Alright, let me know if you need something else!"
+
+  utter_mood_great:
+    - text: "That's awesome to hear! 😊 Let me know how I can help."
+
+  utter_mood_unhappy:
+    - text: "I'm sorry you're feeling that way. I'm here if you need help with anything."
+
+  utter_bot_challenge:
+    - text: "I'm an AI assistant here to support you with study abroad info!"
+
+  utter_ask_visa_requirements:
+    - text: "Visa requirements vary by country. Let me know where you want to study and I can help."
+
+  utter_ask_accommodation:
+    - text: "You can find dorms, shared apartments, and off-campus housing options. Need help finding some?"
+
+  utter_ask_universities:
+    - text: "There are many top universities worldwide. Do you have a country or field of study in mind?"
+
+  utter_ask_tuition_fees:
+    - text: "Tuition fees depend on the program and country. Want an estimate for a specific country?"
+
+  utter_ask_travel_info:
+    - text: "Check platforms like StudentUniverse or airline websites for student discounts and travel tips."
+
+  utter_ask_language_requirements:
+    - text: "Many countries require IELTS or TOEFL. Some also offer programs in English. Want help checking?"
+
+  utter_ask_professors:
+    - text: "Professors are usually supportive of international students. You can often reach out by email or in class."
+
+  utter_ask_student_life:
+    - text: "Student life includes clubs, events, and a chance to meet students from all over the world. Want tips on making friends?"
+
+  utter_ask_part_time_rules:
+    - text: "Most countries allow international students to work limited hours. Let me know your destination for specific rules."
+
+  utter_ask_health_insurance:
+    - text: "Health insurance is usually required. Some universities provide plans, or you can get private coverage."
+
+  utter_ask_internships:
+    - text: "Universities and websites like LinkedIn can help you find internships. Want help writing a CV or cover letter?"
+
+  utter_ask_scholarships:
+    - text: "There are scholarships based on country, university, and program. Want to search some platforms now?"
+
+  utter_ask_campus_facilities:
+    - text: "Most campuses offer libraries, sports centers, study rooms, and cafeterias. Need help finding something specific?"
+
+  utter_default:
+    - text: "I'm not sure I understood that. Could you rephrase or ask another way?"
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_affirm
+  - utter_deny
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_mood_great
+  - utter_mood_unhappy
+  - utter_bot_challenge
+  - utter_ask_visa_requirements
+  - utter_ask_accommodation
+  - utter_ask_universities
+  - utter_ask_tuition_fees
+  - utter_ask_travel_info
+  - utter_ask_language_requirements
+  - utter_ask_professors
+  - utter_ask_student_life
+  - utter_ask_part_time_rules
+  - utter_ask_health_insurance
+  - utter_ask_internships
+  - utter_ask_scholarships
+  - utter_ask_campus_facilities
+  - action_ask_llm
+  - action_search_web
+  - action_dynamic_llama
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

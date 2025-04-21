@@ -1,0 +1,77 @@
+version: "3.1"
+
+stories:
+- story: greet user
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: goodbye user
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: visa question
+  steps:
+    - intent: ask_visa_requirements
+    - action: action_dynamic_llama
+
+- story: accommodation info
+  steps:
+    - intent: ask_accommodation
+    - action: action_dynamic_llama
+
+- story: tuition fees question
+  steps:
+    - intent: ask_tuition_fees
+    - action: action_dynamic_llama
+
+- story: scholarship question
+  steps:
+    - intent: ask_scholarships
+    - action: action_dynamic_llama
+
+- story: university info
+  steps:
+    - intent: ask_universities
+    - action: action_dynamic_llama
+
+- story: travel info
+  steps:
+    - intent: ask_travel_info
+    - action: action_dynamic_llama
+
+- story: language requirements
+  steps:
+    - intent: ask_language_requirements
+    - action: action_dynamic_llama
+
+- story: professor questions
+  steps:
+    - intent: ask_professors
+    - action: action_dynamic_llama
+
+- story: student life
+  steps:
+    - intent: ask_student_life
+    - action: action_dynamic_llama
+
+- story: part-time jobs
+  steps:
+    - intent: ask_part_time_rules
+    - action: action_dynamic_llama
+
+- story: health insurance info
+  steps:
+    - intent: ask_health_insurance
+    - action: action_dynamic_llama
+
+- story: internship info
+  steps:
+    - intent: ask_internships
+    - action: action_dynamic_llama
+
+- story: campus facilities
+  steps:
+    - intent: ask_campus_facilities
+    - action: action_dynamic_llama

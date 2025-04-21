@@ -1,0 +1,419 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_visa_requirements
+  examples: |
+    - What are the visa requirements to study in Japan?
+    - How can I apply for a student visa?
+    - Do I need a visa to study abroad?
+    - What documents are needed for a student visa?
+    - How long does it take to get a student visa?
+    - What is the process for obtaining a student visa?
+    - Are there any specific requirements for a student visa?
+    - Can I work while on a student visa?
+    - What is the duration of a student visa?
+    - Can I extend my student visa?
+    - What is the cost of a student visa?
+    - Do I need to show proof of funds for a student visa?
+    - What is the application fee for a student visa?
+    - How do I apply for a student visa?
+    - What is the processing time for a student visa?
+    - What are the eligibility criteria for a student visa?
+    - What are the visa requirements to study in Japan?
+    - How can I apply for a student visa to Canada?
+    - Do I need a visa to study in the UK?
+    - What documents are needed for a US student visa?
+    - Are there special visa rules for Germany?
+    - How long can I stay in the US on a student visa?
+    - What is the process for obtaining a student visa in Australia?
+
+- intent: ask_accommodation
+  examples: |
+    - Does the university offer dorms?
+    - Where can I stay as a student?
+    - Are there any student accommodations?
+    - How much does student housing cost?
+    - What are the options for student housing?
+    - Can I live off-campus?
+    - What is the cost of living in student housing?
+    - Are there any hostels nearby?
+    - How do I apply for student housing?
+    - What is the process for finding accommodation?
+    - Are there any shared apartments for students?
+    - What are the best neighborhoods for students?
+    - How do I find a roommate?
+    - What is the average rent for a student apartment?
+    - Are there any housing resources for international students?
+    - What is the application process for student housing?
+    - Are there any housing options for graduate students?
+    - What are the rules for living in student housing?
+    - Are there any housing options for undergraduate students?
+    - What is the cost of living in the area?
+    - Are there any housing options for exchange students?
+    - What are the best areas to live in as a student?
+    - How do I find a place to live?
+    - What are the housing options for international students?
+    - Are there any housing options for first-year students?
+    - What are the housing options for transfer students?
+    - Are there any housing options for returning students?
+    - What are the housing options for graduate students? 
+    - Are there any housing options for undergraduate students?
+    - What are the housing options for exchange students?
+    - Are there any housing options for first-year students?
+    - What are the housing options for transfer students?
+    - Are there any housing options for returning students?
+    - What are the housing options for international students?
+    - Are there any housing options for graduate students?
+    - What are the housing options for undergraduate students?
+    - Are there any housing options for exchange students?
+    - Are there any housing options for first-year students?
+    - Are there any housing options for transfer students?
+    - Are there any housing options for returning students?
+    - What are the housing options for international students?
+    - Are there any housing options for graduate students?
+    - What are the housing options for undergraduate students?
+    - Are there any housing options for exchange students?
+
+- intent: ask_universities
+  examples: |
+    - What are the best universities in Japan for international students?
+    - Can you suggest a university in Tokyo?
+    - Which universities offer English programs?
+    - What university should I choose?
+    - What are the top universities in Japan?
+    - What are the best universities for international students?
+    - What are the best universities for international students in Japan?
+    - What are the best universities for international students in Tokyo?
+    - What are the best universities for international students in Osaka?
+     - What are the best universities for international students?
+    - Can you suggest a good university in the UK?
+    - Which universities offer English-taught programs?
+    - What university should I choose in Canada?
+    - Are there affordable universities in Europe?
+    - What are the best universities for international students in Europe?
+    - What are the best universities for international students in the US?
+    - What are the best universities for international students in Canada?
+    - What are the best universities for international students in Australia?
+    - What are the best universities for international students in New Zealand?
+    - What are the best universities for international students in Asia?
+    - What are the best universities for international students in Africa?
+    - What are the best universities for international students in South America?
+    - What are the best universities for international students in the Middle East?
+    - What are the best universities for international students in the Caribbean?
+    - What are the best universities for international students in the Pacific Islands?
+    - What are the best universities for international students in the Arctic?
+    - What are the best universities for international students in Antarctica?
+    - What are the best universities for international students in the Arctic?
+    - What are the best universities for international students in the Antarctic?
+
+- intent: ask_tuition_fees
+  examples: |
+    - How much is the tuition fee?
+    - What’s the cost of studying in the USA?
+    - Is tuition expensive in Germany?
+    - Can international students get fee waivers?
+    - What are the average tuition fees for a master’s in Australia?
+    - What are the tuition fees for international students?
+    - What are the tuition fees for a bachelor’s in Canada?
+    - What are the tuition fees for a master’s in the UK?
+    - What are the tuition fees for a PhD in Japan?
+    - What are the tuition fees for a bachelor’s in Japan?
+    - What are the tuition fees for a master’s in Japan?
+    - What are the tuition fees for a PhD in Japan?
+    - What are the tuition fees for a bachelor’s in the USA?
+    - What are the tuition fees for a master’s in the USA?
+    - What are the tuition fees for a PhD in the USA?
+    - What are the tuition fees for a bachelor’s in Germany?
+    - What are the tuition fees for a master’s in Germany?
+    - What are the tuition fees for a PhD in Germany?
+    - What are the tuition fees for a bachelor’s in Australia?
+    - What are the tuition fees for a master’s in Australia?
+    - What are the tuition fees for a PhD in Australia?
+    - What are the tuition fees for a bachelor’s in Canada?
+    - What are the tuition fees for a master’s in Canada?
+    - What are the tuition fees for a PhD in Canada?
+
+- intent: ask_travel_info
+  examples: |
+    - How can I travel to the UK from my country?
+    - What is the cheapest way to fly to Canada?
+    - Are there student discounts on flights?
+    - Can I travel during university breaks?
+    - How do I get to my campus from the airport?
+    - What is the best way to travel in Japan?
+    - How do I get a student discount on flights?
+    - What are the best travel apps for students?
+    - How do I get a student discount on transportation?
+    - What are the best travel tips for students?
+    - How do I get a student discount on accommodation?
+    - What are the best travel deals for students?
+    - How do I get a student discount on food?
+    - What are the best travel websites for students?
+    - How do I get a student discount on activities?
+    - What are the best travel blogs for students?
+    - How do I get a student discount on tours?
+    - What are the best travel guides for students?
+    - How do I get a student discount on attractions?
+    - What are the best travel resources for students?
+    - How do I get a student discount on events?
+    - What are the best travel forums for students?
+    - How do I get a student discount on transportation?
+    - What are the best travel groups for students?
+    - How do I get a student discount on accommodation?
+    - What are the best travel communities for students?
+    - How do I get a student discount on food?
+    - What are the best travel networks for students?
+    - How do I get a student discount on activities?
+    - What are the best travel organizations for students?
+    - How do I get a student discount on tours?
+    - What are the best travel associations for students?
+
+- intent: ask_language_requirements
+  examples: |
+    - Do I need to know the local language to study abroad?
+    - Are the classes in English or native language?
+    - Do I need IELTS or TOEFL?
+    - What language exams are accepted in the US?
+    - Can I study in Germany without learning German?
+    - What are the language requirements for studying in Japan?
+    - Do I need to take a language test for my visa?
+    - What is the minimum score for IELTS?
+    - What is the minimum score for TOEFL?
+    - Are there any language courses available?
+    - Do I need to take a language course before starting my program?
+    - What are the language requirements for studying in Canada?
+    - Do I need to take a language test for my program?
+    - What are the language requirements for studying in Australia? 
+    - Do I need to take a language test for my program in the UK?
+    - What are the language requirements for studying in the UK?
+    - Do I need to take a language test for my program in Canada?
+    - What are the language requirements for studying in Australia?
+    - Do I need to take a language test for my program in Japan?
+    - What are the language requirements for studying in Japan?
+    - Do I need to take a language test for my program in Germany?
+
+
+- intent: ask_professors
+  examples: |
+    - What are professors like in international universities?
+    - Are professors friendly to international students?
+    - Can I talk to professors outside of class?
+    - Do professors in Canada speak English?
+    - Can I build a good relationship with my lecturers?
+    - How do I approach a professor for help?
+    - What is the best way to communicate with professors?
+    - How do I get to know my professors?
+    - What is the best way to ask a professor for help?
+    - How do I build a good relationship with my professors?
+
+
+- intent: ask_student_life
+  examples: |
+    - What is student life like in Japan?
+    - Are there clubs and societies for international students?
+    - How do I meet other students?
+    - What are the best activities for students?
+    - How do I make friends as an international student?
+    - What is the social scene like for students?
+    - Are there any student events or activities?
+    - How do I get involved in campus life?
+    - What are the best ways to socialize as a student?
+    - Are there any student organizations or clubs?
+    - How do I find a community as an international student?
+    - What are the best ways to meet other students?
+    - Are there any student support services?
+    - How do I get involved in student organizations?
+    - What are the best ways to get involved in campus life?
+    - Are there any student resources available?
+    - How do I find a mentor as an international student?
+    - What are the best ways to connect with other students?
+
+- intent: ask_part_time_rules
+  examples: |
+    - Can international students work part-time?
+    - What are the part-time job rules for students in the UK?
+    - How many hours can I work on a student visa?
+    - Do I need permission to work while studying?
+    - Is it legal to work as a student in Germany?
+    - What are the rules for working part-time in Japan?
+    - Can I work while studying in Canada?
+    - What are the part-time job rules for students in Australia?
+    - How do I find a part-time job as a student?
+    - What are the best part-time jobs for students?
+    - How do I balance work and study?
+    - What are the best ways to find a part-time job?
+    - Are there any restrictions on part-time work?
+    - How do I apply for a part-time job?
+    - What are the best part-time job websites?
+    - How do I write a CV for a part-time job?
+    - What are the best part-time job resources?
+
+- intent: ask_health_insurance
+  examples: |
+    - Do I need health insurance as an international student?
+    - What is the best health insurance for students?
+    - How do I get health insurance in Japan?
+    - How do I get health insurance in Canada?
+    - What are the health insurance options for students?
+    - What is the cost of health insurance for students?
+    - Are there any health insurance plans for international students
+    - Are there any health insurance options for students?
+    - What are the health insurance requirements for students?
+    - How do I apply for health insurance as a student?
+    - What is the cost of health insurance for students?
+    - Are there any student discounts on health insurance?
+    - How do I find a doctor as an international student?
+    - What are the best health insurance plans for students?
+
+- intent: ask_internships
+  examples: |
+    - How do I find an internship in my field?
+    - What are the best internship programs for students?
+    - How do I find an internship in my country?
+    - How do I find an internship as an international student?
+    - Are there any internship opportunities for students?
+    - What are the best internship websites for students?
+    - How do I apply for an internship?
+    - What are the best ways to find an internship?
+    - Are there any internship programs for international students?
+    - How do I write a CV for an internship?
+    - What are the best internship resources for students?
+    - How do I prepare for an internship interview?
+    - What are the best internship tips for students?
+    - How do I get an internship in my field?
+    - What are the best internship opportunities for students?
+    - How do I find an internship in my field?
+    - What are the best internship programs for students?
+    - How do I find an internship in my country?
+
+
+- intent: ask_scholarships
+  examples: |
+    - scholarships in Germany
+    - tell me about scholarships in Canada
+    - are there any scholarships for the UK?
+    - what scholarships are available for Japan?
+    - scholarship options in the US
+    - can I get funding for studying in Australia?
+    - how do I apply for scholarships in Europe?
+    - funding for international students in the UK
+    - available scholarships for Germany
+    - student scholarships for Canada
+    - tuition help in France
+    - can I get a scholarship to study abroad?
+    - I want to apply for a fully funded master’s program
+    - Which countries offer scholarships for data science?
+    - What are the best fully funded options for AI and ML?
+    - I’m finishing my undergrad in data science, what next?
+    - Can I get a scholarship for a master's in Europe?
+    - Suggest top master's programs in AI with scholarships
+    - I want to study abroad with full funding, what should I do?
+
+- intent: ask_campus_facilities
+  examples: |
+    - What facilities are available on campus?
+    - Are there libraries and study spaces?
+    - Is there a gym or sports center?
+    - What are the dining options on campus?
+    - Are there computer labs and study rooms?
+    - What are the best places to study on campus?
+    - Are there any recreational facilities?
+    - How do I access campus facilities?
+    - What are the opening hours of campus facilities?
+    - Are there any quiet study areas on campus?
+    - What are the best study spots on campus?
+    - Are there any group study rooms available?
+    - What are the best places to relax on campus?
+    - Are there any outdoor spaces on campus?
+
+intents:
+  - nlu_fallback

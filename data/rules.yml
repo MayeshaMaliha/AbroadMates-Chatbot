@@ -1,0 +1,114 @@
+version: "3.1"
+
+rules:
+
+- rule: Greet the user
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: Handle affirmations
+  steps:
+    - intent: affirm
+    - action: utter_affirm
+
+- rule: Handle denials
+  steps:
+    - intent: deny
+    - action: utter_deny
+
+- rule: Cheer up user
+  steps:
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+
+- rule: React to user being happy
+  steps:
+    - intent: mood_great
+    - action: utter_mood_great
+
+- rule: Respond to bot challenge
+  steps:
+    - intent: bot_challenge
+    - action: utter_bot_challenge
+
+# AI-powered LLaMA responses
+- rule: Handle visa questions
+  steps:
+    - intent: ask_visa_requirements
+    - action: action_dynamic_llama
+
+- rule: Handle accommodation questions
+  steps:
+    - intent: ask_accommodation
+    - action: action_dynamic_llama
+
+- rule: Handle university questions
+  steps:
+    - intent: ask_universities
+    - action: action_dynamic_llama
+
+- rule: Handle tuition fee questions
+  steps:
+    - intent: ask_tuition_fees
+    - action: action_dynamic_llama
+
+- rule: Handle travel questions
+  steps:
+    - intent: ask_travel_info
+    - action: action_dynamic_llama
+
+- rule: Handle language requirements
+  steps:
+    - intent: ask_language_requirements
+    - action: action_dynamic_llama
+
+- rule: Handle professor questions
+  steps:
+    - intent: ask_professors
+    - action: action_dynamic_llama
+
+- rule: Handle student life questions
+  steps:
+    - intent: ask_student_life
+    - action: action_dynamic_llama
+
+- rule: Handle part-time job rules
+  steps:
+    - intent: ask_part_time_rules
+    - action: action_dynamic_llama
+
+- rule: Handle health insurance questions
+  steps:
+    - intent: ask_health_insurance
+    - action: action_dynamic_llama
+
+- rule: Handle internship questions
+  steps:
+    - intent: ask_internships
+    - action: action_dynamic_llama
+
+- rule: Handle scholarship questions
+  steps:
+    - intent: ask_scholarships
+    - action: action_dynamic_llama
+
+- rule: Handle campus facilities questions
+  steps:
+    - intent: ask_campus_facilities
+    - action: action_dynamic_llama
+
+- rule: fallback when confidence is low
+  steps:
+    - intent: nlu_fallback
+    - action: action_default_fallback
+
+- rule: Handle fallback with AI
+  steps:
+    - intent: nlu_fallback
+    - action: action_dynamic_llama
