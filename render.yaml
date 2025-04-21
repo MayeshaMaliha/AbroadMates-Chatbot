@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: abroadmates-chatbot
+    env: python
+    buildCommand: pip install -r requirements.txt && rasa train
+    startCommand: rasa run --enable-api --cors "*" --debug
+    pythonVersion: 3.8.19
