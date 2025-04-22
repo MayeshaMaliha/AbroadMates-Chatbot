@@ -103,12 +103,7 @@ rules:
     - intent: ask_campus_facilities
     - action: action_dynamic_llama
 
-- rule: fallback when confidence is low
+- rule: Use LLaMA for general questions
   steps:
-    - intent: nlu_fallback
-    - action: action_default_fallback
-
-- rule: Handle fallback with AI
-  steps:
-    - intent: nlu_fallback
+    - intent: general_question
     - action: action_dynamic_llama

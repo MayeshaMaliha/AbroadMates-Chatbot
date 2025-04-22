@@ -414,6 +414,14 @@ nlu:
     - Are there any group study rooms available?
     - What are the best places to relax on campus?
     - Are there any outdoor spaces on campus?
+    
+- intent: general_question
+  examples: |
+    - What are the requirements to study in Japan?
+    - Can I get a scholarship for undergraduate?
+    - How much is the tuition fee in Tokyo?
+    - Tell me about part-time job rules
+    - What is the process to apply to universities abroad?
 
 intents:
   - nlu_fallback

@@ -13,11 +13,17 @@ class ActionDynamicLlama(Action):
 
         user_message = tracker.latest_message.get("text")
 
+        prompt = (
+            f"You are AbroadMate, a friendly and smart assistant helping students "
+            f"with study abroad queries like visa requirements, scholarships, accommodation, and more.\n\n"
+            f"User: {user_message}\n"
+            f"AbroadMate:"
+        )
+
         try:
-            # Send user message to locally running LLaMA (via Ollama)
             response = requests.post("http://localhost:11434/api/generate", json={
-                "model": "mistral",  # or "llama2" if that's what you're using
-                "prompt": user_message,
+                "model": "mistral",  # change this to "llama2" or another model if needed
+                "prompt": prompt,
                 "stream": False
             })
 
@@ -25,7 +31,7 @@ class ActionDynamicLlama(Action):
                 reply = response.json().get("response", "").strip()
                 dispatcher.utter_message(text=reply)
             else:
-                dispatcher.utter_message(text="Hmm, I couldn't get a response from the AI. Try again in a bit!")
+                dispatcher.utter_message(text="Hmm, I couldn't get a response from the AI. Try again soon!")
 
         except Exception as e:
             print("Error communicating with LLaMA:", e)

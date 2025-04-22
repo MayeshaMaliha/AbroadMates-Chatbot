@@ -1,13 +1,4 @@
-# The config recipe.
-# https://rasa.com/docs/rasa/model-configuration/
 recipe: default.v1
-
-# The assistant project unique identifier
-# This default value must be replaced with a unique assistant name within your deployment
-assistant_id: 20250414-181833-tart-ray
-
-# Configuration for Rasa NLU.
-# https://rasa.com/docs/rasa/nlu/components/
 language: en
 
 pipeline: null
@@ -33,10 +24,9 @@ pipeline: null
 #     threshold: 0.3
 #     ambiguity_threshold: 0.1
 
-# Configuration for Rasa Core.
-# https://rasa.com/docs/rasa/core/policies/
 policies:
-  - name: RulePolicy
-    core_fallback_threshold: 0.3
-    core_fallback_action_name: "action_default_fallback"
-    enable_fallback_prediction: True
+- name: RulePolicy
+  core_fallback_threshold: 0.3
+  core_fallback_action_name: "action_dynamic_llama"
+  enable_fallback_prediction: true
+assistant_id: 20250421-232840-gold-veal

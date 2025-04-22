@@ -21,6 +21,7 @@ intents:
   - ask_internships
   - ask_scholarships
   - ask_campus_facilities
+  - general_question
 
 responses:
   utter_happy:
